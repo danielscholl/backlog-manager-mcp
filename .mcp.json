@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "issue-manager": {
+      "type": "stdio",
+      "command": "uv",
+      "args": [
+        "--directory",
+        ".",
+        "run",
+        "backlog-manager"
+      ],
+      "env": {
+        "TRANSPORT": "stdio",
+        "TASKS_FILE": "tasks.json"
+      }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+[project]
+name = "backlog-manager"
+version = "0.1.0"
+description = "MCP server for managing task backlogs with file-based storage"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "httpx>=0.28.1",
+    "mcp[cli]>=1.3.0",
+    "python-dotenv>=1.0.0",
+]
+
+[project.scripts]
+backlog-manager = "backlog_manager.main:run_cli"
+
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
